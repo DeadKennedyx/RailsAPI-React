@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_04_28_192518) do
     t.string "vin"
     t.string "color"
     t.string "status"
-    t.string "type"
+    t.string "vehicle_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
