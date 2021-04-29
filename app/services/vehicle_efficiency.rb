@@ -18,7 +18,7 @@ class VehicleEfficiency
     fuel_entry = JSON.parse(response.body).last
 
     if miles_and_gallons fuel_entry
-      fuel_entry['usage_in_mi'] / fuel_entry['us_gallons'].to_f
+      fuel_entry['usage_in_mi'].to_f / fuel_entry['us_gallons'].to_f
     end
   end
 

@@ -53,15 +53,17 @@ class Vehicle extends React.Component {
   }
 
   render(){
-    return <div className="vw-100 vh-100 primary-color d-flex align-items-center justify-content-center">
-      <div className="jumbotron jumbotron-fluid bg-transparent">
-        <div className="container secondary-color">
-          <h1 className="display-4">Vehicle</h1>
-          <p className="lead">
-            Vehicle Save by VIN
-          </p>
-          <input type="text" ref={this.vin}/>
-          <button onClick={this.saveVehicle.bind(this)}>Save</button>
+    return <div>
+      <div className="container">
+        <div>
+          <div>
+            <h1>Fleet.io</h1>
+            <label>
+              Vehicle Save by VIN
+            </label>
+            <input type="text" ref={this.vin}/>
+            <button onClick={this.saveVehicle.bind(this)}>Save</button>
+          </div>
         </div>
       </div>
       <Table vehicles={this.state.vehicles}></Table>
