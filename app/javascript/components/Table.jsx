@@ -12,6 +12,7 @@ class Table extends React.Component {
           <td>{vehicle.vin}</td>
           <td>{vehicle.color}</td>
           <td>{vehicle.vehicle_type}</td>
+          <td>{vehicle.efficiency}</td>
         </tr>
       )
     })
