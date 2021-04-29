@@ -1,24 +1,25 @@
-# README
+# Fleet.io API with React
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Node version - v14.16.0
+* Rails version - 6.1.3.1
 
-Things you may want to cover:
+## Setup
+1. bundle
+2. yarn install
+3. rails db:create db:migrate
 
-* Ruby version
+## Components
 
-* System dependencies
+#### Backend
+1. services/vehicle_attributes.rb
+ - retrieves vehicle attributes from fleet.io api
 
-* Configuration
+3. services/vehicle_efficiency.rb
+ - retrieves efficiency from fleet.io api
 
-* Database creation
+#### Frontend
+1. javascripts/components/Table.jsx
+ - renders Table component with saved vehicles
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+2. javascripts/components/Vehicle.jsx
+ - renders form to create vehicles, and passes props to Table to update new vehicles live 
