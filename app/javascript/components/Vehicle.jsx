@@ -6,10 +6,26 @@ class Vehicle extends React.Component {
   constructor(props) {
     super(props)
     this.vin = React.createRef()
+    this.state = {
+      vehicles: []
+    };
+  }
+
+  componentDidMount() {
+    const url = "/api/v1/vehicles";
+    fetch(url).then(response => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error("Error retrieving vehicles");
+    }).then(response => {
+      this.setState({ vehicles: response })
+    });
   }
 
   saveVehicle(){
     const token = document.querySelector('meta[name="csrf-token"]').content;
+    const that = this
     fetch('/api/v1/vehicles', {
       method: 'POST',
       headers: {
@@ -28,8 +44,8 @@ class Vehicle extends React.Component {
         throw "Error Saving Car, try again.";
       }
     })
-    .then(function(texto) {
-      console.log(texto);
+    .then(function(data) {
+      that.setState({vehicles: that.state.vehicles.concat(JSON.parse(data))})
     })
     .catch(function(err) {
       console.log(err);
@@ -48,7 +64,7 @@ class Vehicle extends React.Component {
           <button onClick={this.saveVehicle.bind(this)}>Save</button>
         </div>
       </div>
-      <Table></Table>
+      <Table vehicles={this.state.vehicles}></Table>
     </div>
   }
 }
