@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Table from './Table'
 
 class Vehicle extends React.Component {
   constructor(props) {
@@ -47,6 +48,7 @@ class Vehicle extends React.Component {
           <button onClick={this.saveVehicle.bind(this)}>Save</button>
         </div>
       </div>
+      <Table></Table>
     </div>
   }
 }
