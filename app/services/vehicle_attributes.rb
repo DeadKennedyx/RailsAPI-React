@@ -1,6 +1,4 @@
 class VehicleAttributes
-  require 'uri'
-  require 'net/http'
   require 'httparty'
 
   def initialize vin
@@ -17,9 +15,9 @@ class VehicleAttributes
 
     response = HTTParty.get(url, headers: headers)
 
-    vehicle = JSON.parse(response.body)
+    vehicle = JSON.parse(response.body).first
 
-    unless vehicle.empty?
+    unless vehicle.nil?
       { vin: vehicle['vin'],
         color: vehicle['vehicle_status_color'],
         status: vehicle['vehicle_status_name'],
