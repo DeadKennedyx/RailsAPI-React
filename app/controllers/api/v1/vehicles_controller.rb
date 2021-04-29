@@ -10,7 +10,7 @@ class Api::V1::VehiclesController < ApplicationController
     if vehicle.valid?
       render json: vehicle
     else
-      render json: vehicle.errors, status: :bad_request
+      render json: vehicle.errors.full_messages, status: :bad_request
     end
   end
 

@@ -16,8 +16,15 @@ class VehicleAttributes
     }
 
     response = HTTParty.get(url, headers: headers)
-    vehicle = JSON.parse(response.body).first
 
-    { vin: vehicle['vin'], color: vehicle['vehicle_status_color'], status: vehicle['vehicle_status_name'], vehicle_type: vehicle['vehicle_type_name'], fleet_id: vehicle['id'] }
+    vehicle = JSON.parse(response.body)
+
+    unless vehicle.empty?
+      { vin: vehicle['vin'],
+        color: vehicle['vehicle_status_color'],
+        status: vehicle['vehicle_status_name'],
+        vehicle_type: vehicle['vehicle_type_name'],
+        fleet_id: vehicle['id'] }
+    end
   end
 end
