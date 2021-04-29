@@ -10,4 +10,7 @@
 
 ## Components
 1. services/vehicle_attributes.rb
-2. services/vehicle_efficiency.rb
+ - retrieves vehicle attributes from fleet.io api
+
+3. services/vehicle_efficiency.rb
+ - retrieves efficiency from fleet.io api
