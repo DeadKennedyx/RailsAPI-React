@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-class Vehicle extends React.Component {
+class Vehicles extends React.Component {
   constructor(props) {
     super(props)
     this.vin = React.createRef()
@@ -9,8 +8,8 @@ class Vehicle extends React.Component {
 
   saveVehicle(){
     const token = document.querySelector('meta[name="csrf-token"]').content;
-    fetch('/api/v1/vehicles', {
-      method: 'POST',
+    fetch('/vehicles', {
+      method: 'GET',
       headers: {
         "X-CSRF-Token": token,
         "Content-Type": "application/json"
