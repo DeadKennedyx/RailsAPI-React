@@ -20,6 +20,14 @@ class Table extends React.Component {
 
   render() {
     return <table id='vehicles'>
+       <thead>
+         <tr>
+          <td>Vin</td>
+          <td>Color</td>
+          <td>Vehicle Type</td>
+          <td>Vehicle Efficiency(gallons/miles)</td>
+         </tr>
+       </thead>
        <tbody>
           {this.renderTableData()}
        </tbody>
