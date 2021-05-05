@@ -41,7 +41,6 @@ const Vehicle = () => {
     const [vehicles, setVehicles] = React.useState([])
     const onClick = async () => {
       const vehicle = await saveVehicle(vin.current.value)
-      debugger
       if (vehicle)
         setVehicles([...vehicles, vehicle])
     }
