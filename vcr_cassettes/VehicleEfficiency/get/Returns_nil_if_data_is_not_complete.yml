@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://secure.fleetio.com/api/v1/vehicles/1416468/fuel_entries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Token 635d9bf526682e02ab8abcf05b00561d50de8142
+      Account-Token:
+      - 798819214b
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 05 May 2021 03:58:46 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Pagination-Limit:
+      - '100'
+      X-Pagination-Current-Page:
+      - '1'
+      X-Pagination-Total-Count:
+      - '1'
+      X-Pagination-Total-Pages:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"13c26bd8dbb4b82684ee000797a39e1a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8d94ec3d-0d36-41b3-9001-08c88eed5a37
+      X-Runtime:
+      - '0.094732'
+      Vary:
+      - Accept-Encoding, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjIxNzk3MDUyLCJjb3N0X3Blcl9ociI6bnVsbCwiY29zdF9wZXJfa20iOm51bGwsImNvc3RfcGVyX21pIjpudWxsLCJjdXN0b21fZmllbGRzIjp7InVzZWRfY2FyZCI6ImZhbHNlIiwiY2FyZF9udW1iZXIiOiIiLCJleHBlbnNlX3R5cGUiOiIiLCJmdWVsLXVwX3N0YXRlIjoiIiwiZnVlbF91bml0X251bWJlciI6IiIsImp1YW5fdHlwZV9vZl9mdWVsIjoiIiwic2Vjb25kX3RhbmtfZ2FsbG9ucyI6IiIsInRlc3RfcmVzdHJpY3RlZF9jdXN0b21fZmllbGRzIjoiIn0sImRhdGUiOiIyMDIxLTA0LTA3VDE1OjU5OjAwLjAwMC0wNTowMCIsImV4dGVybmFsX2lkIjpudWxsLCJmdWVsX3R5cGVfaWQiOjM3LCJmdWVsX3R5cGVfbmFtZSI6Ikdhc29saW5lIiwia3BsIjpudWxsLCJsaXRlcnMiOiI0NS40MjUiLCJsaXRlcnNfcGVyX2hyIjpudWxsLCJscDEwMGsiOm51bGwsIm1wZ191ayI6bnVsbCwibXBnX3VzIjpudWxsLCJwYXJ0aWFsIjpudWxsLCJwZXJzb25hbCI6ZmFsc2UsInByaWNlX3Blcl92b2x1bWVfdW5pdCI6Mi43OSwicmF3X3RyYW5zYWN0aW9uX2RhdGEiOm51bGwsInJlZmVyZW5jZSI6bnVsbCwicmVnaW9uIjpudWxsLCJyZXNldCI6bnVsbCwidWtfZ2FsbG9ucyI6IjkuOTkyIiwidWtfZ2FsbG9uc19wZXJfaHIiOm51bGwsInVzX2dhbGxvbnMiOiIxMi4wIiwidXNfZ2FsbG9uc19wZXJfaHIiOm51bGwsInVzYWdlX2luX2hyIjpudWxsLCJ1c2FnZV9pbl9rbSI6bnVsbCwidXNhZ2VfaW5fbWkiOm51bGwsInZlaGljbGVfaWQiOjE0MTY0NjgsInZlaGljbGVfbmFtZSI6IjAwMCBUZXN0IE1ldGVycyAyIOC4gyDguILguKfguJQg44Ku44Oq44Ku44OqIPCfkKciLCJ2ZW5kb3JfaWQiOm51bGwsInZlbmRvcl9uYW1lIjpudWxsLCJ0b3RhbF9hbW91bnQiOjMzLjQ4LCJtZXRlcl9lbnRyeSI6eyJpZCI6MTI3Mjk1MzQ2LCJhdXRvX3ZvaWRlZF9hdCI6bnVsbCwiY2F0ZWdvcnkiOm51bGwsImRhdGUiOiIyMDIxLTA0LTA3IiwibWV0ZXJfdHlwZSI6bnVsbCwibWV0ZXJhYmxlX2lkIjoyMTc5NzA1MiwibWV0ZXJhYmxlX3R5cGUiOiJGdWVsRW50cnkiLCJ2YWx1ZSI6IjUwMDAuMCIsInZlaGljbGVfaWQiOjE0MTY0NjgsInZvaWQiOmZhbHNlLCJ0eXBlIjpudWxsLCJjcmVhdGVkX2F0IjoiMjAyMS0wNC0wN1QxNjowMDo1My4zOTgtMDU6MDAiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0yOFQxMjowMDozMS4wOTctMDU6MDAifSwiZ2VvbG9jYXRpb24iOnsibGF0aXR1ZGUiOjMzLjQ5NDYyODkwNjI1LCJsb25naXR1ZGUiOi04Ni44MDAwMjk0NjA2ODcxNiwiYWx0aXR1ZGUiOm51bGwsInNwZWVkIjpudWxsLCJhY2N1cmFjeSI6bnVsbH0sImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTA3VDE2OjAwOjUzLjM1OS0wNTowMCIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTI4VDEyOjAwOjMxLjEyNi0wNTowMCJ9XQ==
+  recorded_at: Wed, 05 May 2021 03:58:47 GMT
+recorded_with: VCR 6.0.0

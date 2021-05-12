@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://secure.fleetio.com/api/v1/vehicles?q%5Bvin_eq%5D=123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Token 635d9bf526682e02ab8abcf05b00561d50de8142
+      Account-Token:
+      - 798819214b
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 05 May 2021 03:41:42 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Pagination-Limit:
+      - '100'
+      X-Pagination-Current-Page:
+      - '1'
+      X-Pagination-Total-Count:
+      - '1'
+      X-Pagination-Total-Pages:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"cf40ed7dd61c7de1824a15a9e73b5ed8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3a7fe289-557d-407b-b74e-e475c61e9bbc
+      X-Runtime:
+      - '0.148009'
+      Vary:
+      - Accept-Encoding, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjE0MTY0NjgsImFjY291bnRfaWQiOjE4LCJhcmNoaXZlZF9hdCI6bnVsbCwiZnVlbF90eXBlX2lkIjpudWxsLCJmdWVsX3R5cGVfbmFtZSI6bnVsbCwiZnVlbF92b2x1bWVfdW5pdHMiOiJ1c19nYWxsb25zIiwiZ3JvdXBfaWQiOjU0LCJncm91cF9uYW1lIjoiQmlybWluZ2hhbSIsIm1ldGVyX3VuaXQiOiJtaSIsIm5hbWUiOiIwMDAgVGVzdCBNZXRlcnMgMiDguIMg4LiC4Lin4LiUIOOCruODquOCruODqiDwn5CnIiwib3duZXJzaGlwIjoiT3duZWQiLCJzZWNvbmRhcnlfbWV0ZXIiOmZhbHNlLCJzZWNvbmRhcnlfbWV0ZXJfdW5pdCI6bnVsbCwic3lzdGVtX29mX21lYXN1cmVtZW50IjoibWV0cmljIiwidmVoaWNsZV9zdGF0dXNfaWQiOjMyNjMsInZlaGljbGVfc3RhdHVzX25hbWUiOiJJbiBTaG9wIiwidmVoaWNsZV9zdGF0dXNfY29sb3IiOiJvcmFuZ2UiLCJ2ZWhpY2xlX3R5cGVfaWQiOjE0NCwidmVoaWNsZV90eXBlX25hbWUiOiJDYXIiLCJmdWVsX2VudHJpZXNfY291bnQiOjEsInNlcnZpY2VfZW50cmllc19jb3VudCI6MCwic2VydmljZV9yZW1pbmRlcnNfY291bnQiOjAsInZlaGljbGVfcmVuZXdhbF9yZW1pbmRlcnNfY291bnQiOjAsImNvbW1lbnRzX2NvdW50IjowLCJkb2N1bWVudHNfY291bnQiOjAsImltYWdlc19jb3VudCI6MCwiY3VycmVudF9sb2NhdGlvbl9lbnRyeV9pZCI6bnVsbCwiaXNfc2FtcGxlIjpmYWxzZSwiaW5fc2VydmljZV9kYXRlIjpudWxsLCJpbl9zZXJ2aWNlX21ldGVyIjpudWxsLCJlc3RpbWF0ZWRfc2VydmljZV9tb250aHMiOm51bGwsImVzdGltYXRlZF9yZXBsYWNlbWVudF9taWxlYWdlIjpudWxsLCJlc3RpbWF0ZWRfcmVzYWxlX3ByaWNlIjpudWxsLCJvdXRfb2Zfc2VydmljZV9kYXRlIjpudWxsLCJvdXRfb2Zfc2VydmljZV9tZXRlciI6bnVsbCwibWV0ZXJfbmFtZSI6Ik9kb21ldGVyIiwic2Vjb25kYXJ5X21ldGVyX25hbWUiOiJTZWNvbmRhcnkgTWV0ZXIiLCJjcmVhdGVkX2F0IjoiMjAyMS0wMy0zMVQxMzo0Mzo1NS45MjgtMDU6MDAiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0yOFQxMjowMTowNi4zMzUtMDU6MDAiLCJjdXJyZW50X21ldGVyX3ZhbHVlIjo1MDAwLjAsImN1cnJlbnRfbWV0ZXJfZGF0ZSI6IjIwMjEtMDQtMDciLCJzZWNvbmRhcnlfbWV0ZXJfdmFsdWUiOjAuMCwic2Vjb25kYXJ5X21ldGVyX2RhdGUiOm51bGwsImdyb3VwX2FuY2VzdHJ5IjoiQmlybWluZ2hhbSIsImNvbG9yIjpudWxsLCJsaWNlbnNlX3BsYXRlIjpudWxsLCJtYWtlIjpudWxsLCJtb2RlbCI6bnVsbCwicmVnaXN0cmF0aW9uX2V4cGlyYXRpb25fbW9udGgiOjAsInJlZ2lzdHJhdGlvbl9zdGF0ZSI6bnVsbCwidHJpbSI6bnVsbCwidmluIjoiMTIzIiwieWVhciI6bnVsbCwibG9hbl9hY2NvdW50X251bWJlciI6bnVsbCwibG9hbl9lbmRlZF9hdCI6bnVsbCwibG9hbl9pbnRlcmVzdF9yYXRlIjpudWxsLCJsb2FuX25vdGVzIjpudWxsLCJsb2FuX3N0YXJ0ZWRfYXQiOm51bGwsImxvYW5fdmVuZG9yX2lkIjpudWxsLCJsb2FuX3ZlbmRvcl9uYW1lIjpudWxsLCJjdXN0b21fZmllbGRzIjp7Im1pbGl0YXJ5X2hvbGQiOiJmYWxzZSIsIndhcnJhbnR5X3R5cGUiOiIiLCJ0ZWxlbWF0aWNzX3N1YnNjcmlwdGlvbiI6IiIsInJlc3RyaWN0IjoiIiwid2FycmFudHlfZXhwaXJhdGlvbiI6IiIsImFfbmV3X3Rlc3QiOiIiLCJjaGVja2JveF9maWx0ZXJfdGVzdCI6ImZhbHNlIn0sImluc3BlY3Rpb25fc2NoZWR1bGVzX2NvdW50IjoxMSwiaXNzdWVzX2NvdW50IjoxLCJ3b3JrX29yZGVyc19jb3VudCI6NiwidHlwZV9uYW1lIjoiQ2FyIiwiZGVmYXVsdF9pbWFnZV91cmwiOm51bGwsImRlZmF1bHRfaW1hZ2VfdXJsX21lZGl1bSI6bnVsbCwiZGVmYXVsdF9pbWFnZV91cmxfc21hbGwiOm51bGwsImRlZmF1bHRfaW1hZ2VfdXJsX2xhcmdlIjpudWxsLCJkcml2ZXIiOnt9LCJzcGVjcyI6eyJpZCI6MTc1ODQ3NiwidmVoaWNsZV9pZCI6MTQxNjQ2OCwiYWNjb3VudF9pZCI6MTgsImJvZHlfdHlwZSI6bnVsbCwiYm9keV9zdWJ0eXBlIjpudWxsLCJkcml2ZV90eXBlIjpudWxsLCJicmFrZV9zeXN0ZW0iOm51bGwsIm1zcnBfY2VudHMiOm51bGwsImZ1ZWxfdGFua19jYXBhY2l0eSI6bnVsbCwiZnVlbF90YW5rXzJfY2FwYWNpdHkiOm51bGwsImZyb250X3RyYWNrX3dpZHRoIjpudWxsLCJncm91bmRfY2xlYXJhbmNlIjpudWxsLCJoZWlnaHQiOm51bGwsImxlbmd0aCI6bnVsbCwicmVhcl90cmFja193aWR0aCI6bnVsbCwid2lkdGgiOm51bGwsIndoZWVsYmFzZSI6bnVsbCwiZnJvbnRfdGlyZV9wc2kiOm51bGwsInJlYXJfdGlyZV9wc2kiOm51bGwsImJhc2VfdG93aW5nX2NhcGFjaXR5IjpudWxsLCJjdXJiX3dlaWdodCI6bnVsbCwiZ3Jvc3NfdmVoaWNsZV93ZWlnaHRfcmF0aW5nIjpudWxsLCJiZWRfbGVuZ3RoIjpudWxsLCJtYXhfcGF5bG9hZCI6bnVsbCwicmVhcl9heGxlX3R5cGUiOiIiLCJmcm9udF90aXJlX3R5cGUiOiIiLCJmcm9udF93aGVlbF9kaWFtZXRlciI6IiIsInJlYXJfdGlyZV90eXBlIjoiIiwicmVhcl93aGVlbF9kaWFtZXRlciI6IiIsImVwYV9jaXR5IjpudWxsLCJlcGFfaGlnaHdheSI6bnVsbCwiZXBhX2NvbWJpbmVkIjpudWxsLCJlbmdpbmVfZGVzY3JpcHRpb24iOiIiLCJlbmdpbmVfYnJhbmQiOiIiLCJlbmdpbmVfYXNwaXJhdGlvbiI6bnVsbCwiZW5naW5lX2Jsb2NrX3R5cGUiOm51bGwsImVuZ2luZV9ib3JlIjpudWxsLCJlbmdpbmVfY2FtX3R5cGUiOm51bGwsImVuZ2luZV9jb21wcmVzc2lvbiI6bnVsbCwiZW5naW5lX2N5bGluZGVycyI6bnVsbCwiZW5naW5lX2Rpc3BsYWNlbWVudCI6bnVsbCwiZnVlbF9pbmR1Y3Rpb24iOm51bGwsImZ1ZWxfcXVhbGl0eSI6IiIsIm1heF9ocCI6bnVsbCwibWF4X3RvcnF1ZSI6bnVsbCwib2lsX2NhcGFjaXR5IjpudWxsLCJyZWRsaW5lX3JwbSI6IiIsImVuZ2luZV9zdHJva2UiOm51bGwsImVuZ2luZV92YWx2ZXMiOm51bGwsInRyYW5zbWlzc2lvbl9kZXNjcmlwdGlvbiI6IiIsInRyYW5zbWlzc2lvbl9icmFuZCI6IiIsInRyYW5zbWlzc2lvbl90eXBlIjpudWxsLCJ0cmFuc21pc3Npb25fZ2VhcnMiOm51bGwsImNhcmdvX3ZvbHVtZSI6bnVsbCwiaW50ZXJpb3Jfdm9sdW1lIjpudWxsLCJwYXNzZW5nZXJfdm9sdW1lIjoiIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTBUMTA6MDU6MDUuMTg0LTA1OjAwIiwidXBkYXRlZF9hdCI6IjIwMjEtMDQtMTBUMTA6MDU6MDUuMTg0LTA1OjAwIiwiZHV0eV90eXBlIjpudWxsLCJ3ZWlnaHRfY2xhc3MiOm51bGwsImVuZ2luZV9ib3JlX3dpdGhfdW5pdHMiOm51bGwsIndoZWVsYmFzZV93aXRoX3VuaXRzIjpudWxsLCJtc3JwIjpudWxsfSwiZXh0ZXJuYWxfaWRzIjp7ImNsZWFycGF0aGdwcyI6bnVsbCwiZXh0ZXJuYWxfZnVlbF9pZCI6bnVsbCwiZnVlbF9pZCI6bnVsbCwidGFza19jb2RlIjpudWxsLCJ0cmF4eGlzX2lkIjpudWxsfSwiYWlfZW5hYmxlZCI6ZmFsc2UsImFzc2V0YWJsZV90eXBlIjoiVmVoaWNsZSJ9XQ==
+  recorded_at: Wed, 05 May 2021 03:41:43 GMT
+recorded_with: VCR 6.0.0
