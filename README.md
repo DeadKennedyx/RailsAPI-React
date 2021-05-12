@@ -23,6 +23,3 @@
 
 2. javascripts/components/Vehicle.jsx
  - renders form to create vehicles, and passes props to Table to update new vehicles live 
-
-## Heroku App
-https://fleetio-api.herokuapp.com/
