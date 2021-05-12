@@ -1,4 +1,4 @@
-# Fleet.io API with React
+# Rails API with React
 
 * Node version - v14.16.0
 * Rails version - 6.1.3.1
