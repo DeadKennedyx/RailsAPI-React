@@ -12,10 +12,10 @@
 
 #### Backend
 1. services/vehicle_attributes.rb
- - retrieves vehicle attributes from fleet.io api
+ - retrieves vehicle attributes from external api
 
 3. services/vehicle_efficiency.rb
- - retrieves efficiency from fleet.io api
+ - retrieves efficiency from external api
 
 #### Frontend
 1. javascripts/components/Table.jsx
